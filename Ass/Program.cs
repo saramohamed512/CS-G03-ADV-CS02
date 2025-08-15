@@ -35,6 +35,26 @@
 
             //Console.WriteLine(isPalindrome ? "YES" : "NO");
             #endregion
+            #region Q3:Reverse queue using stack
+            Queue<int> queue = new Queue<int>(new[] { 1, 2, 3, 4, 5 });
+            Console.WriteLine("Queue: " + string.Join(", ", queue));
+
+            Stack<int> stack = new Stack<int>();
+
+         
+            while (queue.Count > 0)
+            {
+                stack.Push(queue.Dequeue());
+            }
+
+            while (stack.Count > 0)
+            {
+                queue.Enqueue(stack.Pop());
+            }
+
+            Console.WriteLine("Reversed queue: " + string.Join(", ", queue));
+            #endregion
+
         }
     }
 }
