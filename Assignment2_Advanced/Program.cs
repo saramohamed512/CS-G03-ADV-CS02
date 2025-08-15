@@ -56,7 +56,6 @@ namespace Assignment2_Advanced
             //{
             //    Console.WriteLine(item);
             //}
-            #endregion
             #region binary search
             //int result=numbersWithCapacity.BinarySearch(50);
             //Console.WriteLine($"Binary search result: {result}");
@@ -105,6 +104,21 @@ namespace Assignment2_Advanced
             //numbersWithCapacity[0] = 100; // This is allowed since numbersWithCapacity is still mutable
 
             #endregion
+
+            #endregion
+            #region LinkedList<T>
+            LinkedList<int> numbers = new LinkedList<int>();
+            numbers.AddFirst(1);
+            numbers.AddAfter(numbers.First, 2);
+            numbers.AddLast(3);
+            numbers.AddLast(4);
+            foreach (int item in numbers)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
+
+
             #endregion
 
 
