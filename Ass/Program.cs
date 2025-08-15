@@ -242,30 +242,57 @@ namespace Ass
             //Console.WriteLine("[" + string.Join(", ", result.ToArray()) + "]");
             #endregion
             #region Q10:Find contiguous sublist with target sum
-            int[] arr = Array.ConvertAll(Console.ReadLine().Trim('[', ']').Split(','), int.Parse);
-            int target = int.Parse(Console.ReadLine());
+            //int[] arr = Array.ConvertAll(Console.ReadLine().Trim('[', ']').Split(','), int.Parse);
+            //int target = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < arr.Length; i++)
-            {
-                int sum = 0;
-                for (int j = i; j < arr.Length; j++)
-                {
-                    sum += arr[j];
-                    if (sum == target)
-                    {
-                        int[] sublist = new int[j - i + 1];
-                        Array.Copy(arr, i, sublist, 0, j - i + 1);
-                        Console.WriteLine("[" + string.Join(", ", sublist) + "]");
-                        return;
-                    }
-                    else if (sum > target)
-                    {
-                        break;
-                    }
-                }
-            }
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    int sum = 0;
+            //    for (int j = i; j < arr.Length; j++)
+            //    {
+            //        sum += arr[j];
+            //        if (sum == target)
+            //        {
+            //            int[] sublist = new int[j - i + 1];
+            //            Array.Copy(arr, i, sublist, 0, j - i + 1);
+            //            Console.WriteLine("[" + string.Join(", ", sublist) + "]");
+            //            return;
+            //        }
+            //        else if (sum > target)
+            //        {
+            //            break;
+            //        }
+            //    }
+            //}
 
-            Console.WriteLine("No sublist found");
+            //Console.WriteLine("No sublist found");
+            #endregion
+            #region Q11:Reverse first K elements of a queue
+            //int[] input = Array.ConvertAll(Console.ReadLine().Trim('[', ']').Split(','), int.Parse);
+            //int K = int.Parse(Console.ReadLine());
+
+            //Queue<int> queue = new Queue<int>(input);
+            //Stack<int> stack = new Stack<int>();
+
+            
+            //for (int i = 0; i < K; i++)
+            //{
+            //    stack.Push(queue.Dequeue());
+            //}
+
+          
+            //while (stack.Count > 0)
+            //{
+            //    queue.Enqueue(stack.Pop());
+            //}
+
+         
+            //for (int i = 0; i < queue.Count - K; i++)
+            //{
+            //    queue.Enqueue(queue.Dequeue());
+            //}
+
+            //Console.WriteLine("[" + string.Join(", ", queue) + "]");
             #endregion
 
         }
