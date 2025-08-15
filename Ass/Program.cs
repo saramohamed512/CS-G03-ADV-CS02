@@ -99,7 +99,7 @@ namespace Ass
             //Console.WriteLine("Array after removing duplicates: " + string.Join(", ", distinctArr));
             #endregion
             #region Q6:Remove odd numbers from ArrayList
-       
+
 
             //ArrayList list = new ArrayList() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             //Console.WriteLine("List: " + string.Join(", ", list.ToArray()));
@@ -113,6 +113,18 @@ namespace Ass
             //}
 
             //Console.WriteLine("List after removing odd numbers: " + string.Join(", ", list.ToArray()));
+            #endregion
+            #region Q7:Generic queue with different data types
+            //Queue<object> queue = new Queue<object>();
+            //queue.Enqueue(1);
+            //queue.Enqueue("Apple");
+            //queue.Enqueue(5.28);
+
+            //Console.WriteLine("Queue items:");
+            //foreach (var item in queue)
+            //{
+            //    Console.WriteLine(item);
+            //}
             #endregion
 
 
