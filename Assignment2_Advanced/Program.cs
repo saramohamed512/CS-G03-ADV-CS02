@@ -107,15 +107,32 @@ namespace Assignment2_Advanced
 
             #endregion
             #region LinkedList<T>
-            LinkedList<int> numbers = new LinkedList<int>();
-            numbers.AddFirst(1);
-            numbers.AddAfter(numbers.First, 2);
-            numbers.AddLast(3);
-            numbers.AddLast(4);
-            foreach (int item in numbers)
-            {
-                Console.WriteLine(item);
-            }
+            //LinkedList<int> numbers = new LinkedList<int>();
+            //numbers.AddFirst(1);
+            //numbers.AddAfter(numbers.First, 2);
+            //numbers.AddLast(3);
+            //numbers.AddLast(4);
+            //foreach (int item in numbers)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region stack<T>
+            //Stack<int> stack = new Stack<int>();
+
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+            //Console.WriteLine($"Count: {stack.Count}");
+            //foreach (int item in stack)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //stack.Pop(); //2,1
+            //stack.Pop(); //1
+            //stack.Pop(); //empty
+            //stack.TryPop(out int result);// result will be 0, since stack is empty [handel the exception]
+            //Console.WriteLine(result); //0, since stack is empty
             #endregion
 
 
