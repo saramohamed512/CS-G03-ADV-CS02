@@ -93,10 +93,26 @@ namespace Ass
             //int[] arr = { 1, 2, 2, 3, 4, 4, 4, 5, 5 };
             //Console.WriteLine("Array: " + string.Join(", ", arr));
 
-           
+
             //int[] distinctArr = arr.Distinct().ToArray();
 
             //Console.WriteLine("Array after removing duplicates: " + string.Join(", ", distinctArr));
+            #endregion
+            #region Q6:Remove odd numbers from ArrayList
+       
+
+            //ArrayList list = new ArrayList() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //Console.WriteLine("List: " + string.Join(", ", list.ToArray()));
+
+            //for (int i = list.Count - 1; i >= 0; i--)
+            //{
+            //    if ((int)list[i] % 2 != 0)
+            //    {
+            //        list.RemoveAt(i);
+            //    }
+            //}
+
+            //Console.WriteLine("List after removing odd numbers: " + string.Join(", ", list.ToArray()));
             #endregion
 
 
