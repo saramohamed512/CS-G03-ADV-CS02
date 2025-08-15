@@ -168,7 +168,7 @@ namespace Ass
             //}
             #endregion
             #region Q9:Find intersection of two arrays with counts
-       
+
 
             //string[] sizes = Console.ReadLine().Split(',');
             //int size1 = int.Parse(sizes[0].Trim());
@@ -240,6 +240,32 @@ namespace Ass
             //}
 
             //Console.WriteLine("[" + string.Join(", ", result.ToArray()) + "]");
+            #endregion
+            #region Q10:Find contiguous sublist with target sum
+            int[] arr = Array.ConvertAll(Console.ReadLine().Trim('[', ']').Split(','), int.Parse);
+            int target = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int sum = 0;
+                for (int j = i; j < arr.Length; j++)
+                {
+                    sum += arr[j];
+                    if (sum == target)
+                    {
+                        int[] sublist = new int[j - i + 1];
+                        Array.Copy(arr, i, sublist, 0, j - i + 1);
+                        Console.WriteLine("[" + string.Join(", ", sublist) + "]");
+                        return;
+                    }
+                    else if (sum > target)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            Console.WriteLine("No sublist found");
             #endregion
 
         }
