@@ -127,45 +127,119 @@ namespace Ass
             //}
             #endregion
             #region Q8:Search for target in stack
-        //    Stack<int> stack = new Stack<int>();
-        
-        //for (int i = 1; i <= 10; i++) stack.Push(i);
-        
-        //Console.Write("Enter target to search: ");
-        //int target = int.Parse(Console.ReadLine());
-        
-        //int count = 0;
-        //bool found = false;
-        //Stack<int> tempStack = new Stack<int>();
-        
-    
-        //while (stack.Count > 0)
-        //{
-        //    count++;
-        //    int current = stack.Pop();
-        //    tempStack.Push(current);
-            
-        //    if (current == target)
-        //    {
-        //        found = true;
-        //        break;
-        //    }
-        //}
-        
-      
-        //while (tempStack.Count > 0)
-        //{
-        //    stack.Push(tempStack.Pop());
-        //}
-        
-        //if (found)
-        //{
-        //    Console.WriteLine($"Target was found successfully and the count = {count}");
-        //}
-        //else
-        //{
-        //    Console.WriteLine("Target was not found");
-        //}
+            //    Stack<int> stack = new Stack<int>();
+
+            //for (int i = 1; i <= 10; i++) stack.Push(i);
+
+            //Console.Write("Enter target to search: ");
+            //int target = int.Parse(Console.ReadLine());
+
+            //int count = 0;
+            //bool found = false;
+            //Stack<int> tempStack = new Stack<int>();
+
+
+            //while (stack.Count > 0)
+            //{
+            //    count++;
+            //    int current = stack.Pop();
+            //    tempStack.Push(current);
+
+            //    if (current == target)
+            //    {
+            //        found = true;
+            //        break;
+            //    }
+            //}
+
+
+            //while (tempStack.Count > 0)
+            //{
+            //    stack.Push(tempStack.Pop());
+            //}
+
+            //if (found)
+            //{
+            //    Console.WriteLine($"Target was found successfully and the count = {count}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Target was not found");
+            //}
+            #endregion
+            #region Q9:Find intersection of two arrays with counts
+       
+
+            //string[] sizes = Console.ReadLine().Split(',');
+            //int size1 = int.Parse(sizes[0].Trim());
+            //int size2 = int.Parse(sizes[1].Trim());
+
+            //int[] arr1 = Array.ConvertAll(Console.ReadLine().Trim('[', ']').Split(','), int.Parse);
+            //int[] arr2 = Array.ConvertAll(Console.ReadLine().Trim('[', ']').Split(','), int.Parse);
+
+            //ArrayList freq1 = new ArrayList();
+            //ArrayList freq2 = new ArrayList();
+
+            //foreach (int num in arr1)
+            //{
+            //    bool found = false;
+            //    for (int i = 0; i < freq1.Count; i += 2)
+            //    {
+            //        if ((int)freq1[i] == num)
+            //        {
+            //            freq1[i + 1] = (int)freq1[i + 1] + 1;
+            //            found = true;
+            //            break;
+            //        }
+            //    }
+            //    if (!found)
+            //    {
+            //        freq1.Add(num);
+            //        freq1.Add(1);
+            //    }
+            //}
+
+            //foreach (int num in arr2)
+            //{
+            //    bool found = false;
+            //    for (int i = 0; i < freq2.Count; i += 2)
+            //    {
+            //        if ((int)freq2[i] == num)
+            //        {
+            //            freq2[i + 1] = (int)freq2[i + 1] + 1;
+            //            found = true;
+            //            break;
+            //        }
+            //    }
+            //    if (!found)
+            //    {
+            //        freq2.Add(num);
+            //        freq2.Add(1);
+            //    }
+            //}
+
+            //ArrayList result = new ArrayList();
+            //for (int i = 0; i < freq1.Count; i += 2)
+            //{
+            //    int num = (int)freq1[i];
+            //    int count1 = (int)freq1[i + 1];
+
+            //    for (int j = 0; j < freq2.Count; j += 2)
+            //    {
+            //        if ((int)freq2[j] == num)
+            //        {
+            //            int count2 = (int)freq2[j + 1];
+            //            int minCount = Math.Min(count1, count2);
+            //            for (int k = 0; k < minCount; k++)
+            //            {
+            //                result.Add(num);
+            //            }
+            //            break;
+            //        }
+            //    }
+            //}
+
+            //Console.WriteLine("[" + string.Join(", ", result.ToArray()) + "]");
             #endregion
 
         }
