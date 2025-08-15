@@ -1,4 +1,5 @@
-﻿namespace Ass
+﻿using System.Collections;
+namespace Ass
 {
     internal class Program
     {
@@ -36,24 +37,59 @@
             //Console.WriteLine(isPalindrome ? "YES" : "NO");
             #endregion
             #region Q3:Reverse queue using stack
-            Queue<int> queue = new Queue<int>(new[] { 1, 2, 3, 4, 5 });
-            Console.WriteLine("Queue: " + string.Join(", ", queue));
+            //Queue<int> queue = new Queue<int>(new[] { 1, 2, 3, 4, 5 });
+            //Console.WriteLine("Queue: " + string.Join(", ", queue));
 
-            Stack<int> stack = new Stack<int>();
+            //Stack<int> stack = new Stack<int>();
 
          
-            while (queue.Count > 0)
-            {
-                stack.Push(queue.Dequeue());
-            }
+            //while (queue.Count > 0)
+            //{
+            //    stack.Push(queue.Dequeue());
+            //}
 
-            while (stack.Count > 0)
-            {
-                queue.Enqueue(stack.Pop());
-            }
+            //while (stack.Count > 0)
+            //{
+            //    queue.Enqueue(stack.Pop());
+            //}
 
-            Console.WriteLine("Reversed queue: " + string.Join(", ", queue));
+            //Console.WriteLine("Reversed queue: " + string.Join(", ", queue));
             #endregion
+            #region Q4:Check balanced parentheses
+            //string input = Console.ReadLine();
+            //Stack<char> stack = new Stack<char>();
+            //bool balanced = true;
+
+            //foreach (char c in input)
+            //{
+            //    if (c == '(' || c == '[' || c == '{')
+            //    {
+            //        stack.Push(c);
+            //    }
+            //    else
+            //    {
+            //        if (stack.Count == 0)
+            //        {
+            //            balanced = false;
+            //            break;
+            //        }
+
+            //        char top = stack.Pop();
+            //        if (!((top == '(' && c == ')') ||
+            //              (top == '[' && c == ']') ||
+            //              (top == '{' && c == '}')))
+            //        {
+            //            balanced = false;
+            //            break;
+            //        }
+            //    }
+            //}
+
+            //if (stack.Count > 0) balanced = false;
+
+            //Console.WriteLine(balanced ? "Balanced" : "Not Balanced");
+            #endregion
+
 
         }
     }
