@@ -48,6 +48,63 @@ namespace Assignment2_Advanced
             //Console.WriteLine($"count:{numbersWithCapacity.Count} , capacty:{numbersWithCapacity.Capacity}");
             //Console.WriteLine(SumList(numbersWithCapacity));
             #endregion
+            #region List<T> methods
+            List<int> numbersWithCapacity = new List<int>(5) { 1, 2, 3, 4, 5 };
+            numbersWithCapacity.Add(6);
+            numbersWithCapacity.AddRange(7, 8, 9);
+            //foreach (int item in numbersWithCapacity)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region binary search
+            //int result=numbersWithCapacity.BinarySearch(50);
+            //Console.WriteLine($"Binary search result: {result}");
+            #endregion
+            #region clear
+            //Console.WriteLine($"count:{numbersWithCapacity.Count} , capacty:{numbersWithCapacity.Capacity}");
+            //numbersWithCapacity.Clear();
+            //Console.WriteLine($"count:{numbersWithCapacity.Count} , capacty:{numbersWithCapacity.Capacity}");
+            #endregion
+            #region get range
+            //List<int> rangeNumbers = numbersWithCapacity.GetRange(0, 3);
+            //for (int i = 0; i < rangeNumbers.Count; i++)
+            //{
+            //    Console.WriteLine(rangeNumbers[i]);
+            //}
+            #endregion
+            #region indexof | lastindexof
+            //int index = numbersWithCapacity.IndexOf(3);
+            //Console.WriteLine($"Index of 3: {index}");
+            //int lastIndex = numbersWithCapacity.LastIndexOf(3);
+            //Console.WriteLine($"Last index of 3: {lastIndex}");
+
+            #endregion
+            #region copy to array
+            //int[] array = new int[numbersWithCapacity.Count];
+            //numbersWithCapacity.CopyTo(array);
+            //Console.WriteLine("Copied array:");
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    Console.WriteLine(array[i]);
+            //}
+            #endregion
+            #region remove
+            // Console.WriteLine( numbersWithCapacity.Remove(3));
+            //numbersWithCapacity.RemoveRange(0,2);
+            // Console.WriteLine("After removing elements:");
+            // foreach(int item in numbersWithCapacity)
+            // {
+            //     Console.WriteLine(item);
+            //}
+            //numbersWithCapacity.RemoveAt(0);
+            #endregion
+            #region as read only
+            //IReadOnlyList<int> readOnlyList = numbersWithCapacity.AsReadOnly<int>();
+            ////readOnlyList[0] = 100; // This will cause a compile-time error since it's read-only
+            //numbersWithCapacity[0] = 100; // This is allowed since numbersWithCapacity is still mutable
+
+            #endregion
             #endregion
 
 
