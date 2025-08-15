@@ -42,7 +42,7 @@ namespace Ass
 
             //Stack<int> stack = new Stack<int>();
 
-         
+
             //while (queue.Count > 0)
             //{
             //    stack.Push(queue.Dequeue());
@@ -88,6 +88,15 @@ namespace Ass
             //if (stack.Count > 0) balanced = false;
 
             //Console.WriteLine(balanced ? "Balanced" : "Not Balanced");
+            #endregion
+            #region Q5:Remove duplicates from array
+            //int[] arr = { 1, 2, 2, 3, 4, 4, 4, 5, 5 };
+            //Console.WriteLine("Array: " + string.Join(", ", arr));
+
+           
+            //int[] distinctArr = arr.Distinct().ToArray();
+
+            //Console.WriteLine("Array after removing duplicates: " + string.Join(", ", distinctArr));
             #endregion
 
 
