@@ -134,6 +134,17 @@ namespace Assignment2_Advanced
             //stack.TryPop(out int result);// result will be 0, since stack is empty [handel the exception]
             //Console.WriteLine(result); //0, since stack is empty
             #endregion
+            #region Queue<T>
+            //Queue<int> queue = new Queue<int>();
+            //queue.Enqueue(1);
+            //queue.Enqueue(2);
+            //queue.Enqueue(3);
+            //queue.Dequeue(); // Removes the first element (1)
+            //queue.Dequeue(); // Removes the next element (2)
+            //queue.Dequeue(); // Removes the next element (3)
+            //queue.TryDequeue(out int result); // result will be 0, since queue is empty [handel the exception]
+            //Console.WriteLine(result); // 0, since queue is empty
+            #endregion
 
 
             #endregion
